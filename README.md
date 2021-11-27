@@ -24,6 +24,14 @@ This funtion does to following to the 2 files:
 We will be using this to set the time for refresh "0 1 * * *" to let it refresh as 1am daily
 
 ---
+## Section 4: Charts and APIs
+We will be using the data directly from the site. API call as shown: https://api.covid19api.com/live/country/singapore
+
+Convert to Dataframe and then plot using matplotlib.
+
+We can see that the confirmed cases and death rate is following the same trend. For the recovered numbers, it follows the confirmed number after August 2021 However, the recovered number becomes 0 after August 2021
+
+---
 ## Section 5: Machine Learning
 We will be using the Random Forest Classifier for this problem
 ### Data Ingestion
