@@ -38,6 +38,7 @@ Tables are created using the db-dump.sql file and query.sql is the queries for t
 ---
 ## Section 3: System Design
 We will process the images uploaded by the users to Kafka format. Then we merge the data with the Kafka stream and store it together in a short term service for ease of analysis to get insights. After that, we can store them in any legacy databases for long term storage
+
 ---
 ## Section 4: Charts and APIs
 We will be using the data directly from the site. API call as shown: https://api.covid19api.com/live/country/singapore
