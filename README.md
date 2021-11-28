@@ -9,6 +9,7 @@
 ## Section 1: Data Pipeline
 We will be using Python to process the file. The files are saved in the Data folder and imported using Pandas.
 
+
 ### Description of Functions
 #### Process
 This function process the csv as follows:
@@ -24,6 +25,7 @@ This funtion does to following to the 2 files:
 2. Save the merged data table as 'final.csv'
 
 ### Scheduling
+Schedule is done using Windows Task Scheduler.
 #### CRON
 We will be using this to set the time for refresh "0 1 * * *" to let it refresh as 1am daily
 
