@@ -2,6 +2,10 @@
 ### Author: [Ho Chin Tee](https://www.linkedin.com/in/hoct/)
 ### Email: chintee.h@gmail.com
 ---
+### [Questions](https://github.com/jaabberwocky/dataeng_test)
+
+---
+
 ## Section 1: Data Pipeline
 We will be using Python to process the file. The files are saved in the Data folder and imported using Pandas.
 
@@ -23,6 +27,15 @@ This funtion does to following to the 2 files:
 #### CRON
 We will be using this to set the time for refresh "0 1 * * *" to let it refresh as 1am daily
 
+---
+## Section 2: Databases
+We first determine the Entity Relations, the relationship is shown in the 'ER Diagram' file done in Visio.
+
+Tables are created using the db-dump.sql file and query.sql is the queries for the questions given.
+
+---
+## Section 3: System Design
+We will process the images uploaded by the users to Kafka format. Then we merge the data with the Kafka stream and store it together in a short term service for ease of analysis to get insights. After that, we can store them in any legacy databases for long term storage
 ---
 ## Section 4: Charts and APIs
 We will be using the data directly from the site. API call as shown: https://api.covid19api.com/live/country/singapore
