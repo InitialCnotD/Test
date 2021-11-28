@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  postgres:
+    build:
+      context: ./db
+    environment:
+      - POSTGRES_PASSWORD=mysecretpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - data:/var/lib/postgresql/data
+
+volumes:
+  data: {}
